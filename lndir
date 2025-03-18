@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mkdir /var/spool/voipmonitor/$1; cd /var/spool/voipmonitor/$1; ln -s /DATA/$1/* .; cd ..; chattr +i $1
+
+exit 0

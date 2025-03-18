@@ -1,0 +1,18 @@
+
+#
+# /etc/fstab
+# Created by anaconda on Thu Feb 21 16:09:01 2019
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk'
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
+#
+/dev/mapper/vg_voipmon-lv_root /                       ext4    defaults        1 1
+UUID=06b06492-6117-471a-9282-5af3303d9542 /boot                   ext4    defaults        1 2
+/dev/mapper/vg_voipmon-lv_vmspool /var/spool/voipmonitor  ext4    defaults        1 2
+#/dev/mapper/vg_voipmon-lv_swap swap                    swap    defaults        0 0
+tmpfs                   /dev/shm                tmpfs   defaults        0 0
+devpts                  /dev/pts                devpts  gid=5,mode=620  0 0
+sysfs                   /sys                    sysfs   defaults        0 0
+proc                    /proc                   proc    defaults        0 0
+UUID=a79fea68-7c1e-42e7-b4bd-898aeb446ee4	/DATA	ext4	_netdev,rw	0 0
+#UUID=3D14328E0CAD1DB4	/DATA			ntfs	defaults	0 0
